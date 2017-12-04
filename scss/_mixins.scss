@@ -11,3 +11,10 @@
 @mixin body-font {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@mixin bold-yellow-text {
+	font-size: 1.2em;
+    letter-spacing: .9px;
+    color: #ff9900;
+    font-weight: bold;
+}

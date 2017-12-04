@@ -1,10 +1,65 @@
-/***** HEADER *****/
-.navbar .row {
-  width: 100%; }
-.navbar .phone-container {
-  text-align: center; }
-.navbar .award-container img {
-  width: 49%;
-  display: inline-block; }
+/***** SIZES *****/
+/*Ai Fonts*/
+/*Ai Colors*/
+/*TEXT SIZES*/
+a:hover {
+  text-decoration: none; }
+
+/*FONTS */
+h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
+  font-family: "Roboto", sans-serif; }
+
+.bold-yellow-text {
+  font-size: 1.2em;
+  letter-spacing: .9px;
+  color: #f2ae09;
+  font-weight: bold; }
+
+/*Text Sizes*/
+.small-lg-text {
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: -1.3px; }
+
+/***** NAVBAR *****/
+.navbar {
+  color: #002a3d; }
+  .navbar a {
+    color: #002a3d; }
+    .navbar a:hover {
+      color: #00afef; }
+  .navbar .row {
+    width: 100%; }
+  .navbar .phone-container {
+    text-align: center;
+    margin-bottom: 8px; }
+    .navbar .phone-container p, .navbar .phone-container a {
+      font-size: 1.2em;
+      padding: 0px;
+      margin: 0px; }
+  .navbar .award-container img {
+    width: 47%;
+    display: inline-block;
+    margin-bottom: 8px; }
+
+/***** HERO SECTION *****/
+header.masthead {
+  background: url("../img/family-hero.png") no-repeat;
+  background-size: 978px;
+  min-height: 679px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  header.masthead .container {
+    height: 679px; }
+  header.masthead .row {
+    height: 100%; }
+  header.masthead .help-container {
+    background-color: #002a3d;
+    height: 300px; }
+    header.masthead .help-container .bold-yellow-text {
+      padding: 8px; }
+  header.masthead .help-ticker {
+    background-color: #00afef;
+    padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */
