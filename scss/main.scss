@@ -22,8 +22,15 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 /*Text Sizes*/
 .small-lg-text {
 	font-size: $small-lg-text;
-	font-weight: 900;
+	font-weight: $black;
 	letter-spacing: -1.3px;
+}
+.x-small-lg-text{
+ 	font-size: $x-small-lg-text;
+	font-weight: $black;
+}
+.tiny-ft {
+	font-size: $tiny-text;
 }
 
 
@@ -61,7 +68,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 header {
 	&.masthead {
 		background: url("../img/family-hero.png") no-repeat;
-    background-size: 978px;
+    background-size: 1054px;
 		min-height: $hero-height;
 		padding-top: 0px;
     padding-bottom: 0px;
@@ -72,10 +79,21 @@ header {
     	height: 100%;
     }
     .help-container {
-    	background-color: $dark-blue;
-    	height: 300px;
+    	@include help-container-gradient;
+    	height: 354px;
     	.bold-yellow-text {
     		padding: 8px;
+    		margin-bottom: 0px;
+    	}
+    	.help-container-bottom {
+    		font-size: $help-md-text;
+    	}
+    	p {
+		    margin-left: 21px;
+    		margin-top: 16px;
+    		margin-bottom: 0px;
+    		font-size: $help-lr-text;
+    		font-weight: $bold;
     	}
     }
     .help-ticker {

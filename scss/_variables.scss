@@ -1,6 +1,6 @@
 // Variables
 /***** SIZES *****/
-$hero-height: 679px;
+$hero-height: 732px;
 
 
 /*Ai Fonts*/
@@ -8,13 +8,21 @@ $body-font: 'Roboto', sans-serif;
 
 
 /*Ai Colors*/
-$dark-blue: #002a3d;
+$dark-blue: #052a3d;
 $light-blue: #00afef;
 $ai-gold: #f2ae09;
 $text-blue: #003868;
 
 /*TEXT SIZES*/
 $small-lg-text: 1.5em;
+$x-small-lg-text: 1.1em;
+$tiny-text: .8em;
+$help-lr-text: 1.3em;
+$help-md-text: 1.15em;
+
+/*Font Weight*/
+$black: 900;
+$bold: 700;
 
 
 // Restated Bootstrap Variables
