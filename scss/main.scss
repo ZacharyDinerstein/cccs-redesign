@@ -7,15 +7,19 @@ a:hover {
 }
 
 /*FONTS */
+body {
+	font-size: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 		font-family: $body-font;
 }
 
 .bold-yellow-text {
 	font-size: 1.2em;
-  letter-spacing: .9px;
-  color: $ai-gold;
-  font-weight: bold;
+	letter-spacing: .9px;
+	color: $ai-gold;
+	font-weight: bold;
 }
 
 
@@ -32,7 +36,15 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 .tiny-ft {
 	font-size: $tiny-text;
 }
-
+.hero-lg {
+	font-size: 4rem;
+}
+.hero-md {
+	font-size: 2.5rem;
+}
+.hero-sm {
+	font-size: 1.9rem;
+}
 
 /***** NAVBAR *****/
 .navbar {
@@ -52,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 		p, a {
 			font-size: 1.2em;
 			padding: 0px;
-			margin: 0px;
+			margin: 0px; 
 		}
 	}
 	.award-container {
@@ -68,38 +80,60 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 header {
 	&.masthead {
 		background: url("../img/family-hero.png") no-repeat;
-    background-size: 1054px;
+    	background-size: 1054px;
 		min-height: $hero-height;
 		padding-top: 0px;
-    padding-bottom: 0px;
-    .container {
-    	height: $hero-height;
-    }
-    .row {
-    	height: 100%;
-    }
-    .help-container {
-    	@include help-container-gradient;
-    	height: 354px;
-    	.bold-yellow-text {
-    		padding: 8px;
-    		margin-bottom: 0px;
-    	}
-    	.help-container-bottom {
-    		font-size: $help-md-text;
-    	}
-    	p {
-		    margin-left: 21px;
-    		margin-top: 16px;
-    		margin-bottom: 0px;
-    		font-size: $help-lr-text;
-    		font-weight: $bold;
-    	}
-    }
-    .help-ticker {
-    	background-color: $light-blue;
-    	padding: 10px;
-    }
+    	padding-bottom: 0px;
+	    .container {
+	    	height: $hero-height;
+	    }
+	    .row {
+	    	height: 100%;
+	    }
+	    .hero-text-block {
+	    	font-weight: 900;
+	    	margin-bottom: 32px;
+	    	color: $dark-blue;
+	    	.hero-lg {
+	    		margin-bottom: -22px;
+	    	}
+	    	.hero-md {
+	    		margin-bottom: -4px;
+	    	}
+	    	h2 {
+	    		font-size: 29px;
+	    	}
+	    	p {
+	    		margin-bottom: -12px;
+	    	}
+	    }
+	    .help-container {
+	    	@include help-container-gradient;
+	    	height: 354px;
+	    	.bold-yellow-text {
+	    		padding: 8px;
+	    		margin-bottom: 0px;
+	    	}
+	    	.help-container-bottom {
+	    		font-size: $help-md-text;
+	    	}
+	    	p {
+			    margin-left: 21px;
+	    		margin-top: 16px;
+	    		margin-bottom: 0px;
+	    		font-size: $help-lr-text;
+	    		font-weight: $bold;
+	    	}
+	    }
+	    .help-ticker {
+	    	background-color: $light-blue;
+	    	padding: 10px;
+	    	color: $dark-blue;
+	    	p {
+	    		font-size: .9em;
+    			margin: 0px;
+	    	}
+		}
 	}
 }
 
