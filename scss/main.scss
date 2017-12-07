@@ -23,7 +23,21 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 }
 
 
+/*Color*/
+.yellow {
+	color: $ai-gold;
+}
+
 /*Text Sizes*/
+.xs-text {
+	font-size: 54%;
+    font-weight: 400;
+}
+
+.sm-text {
+	font-size: $sm-text;
+}
+
 .small-lg-text {
 	font-size: $small-lg-text;
 	font-weight: $black;
@@ -45,6 +59,19 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 .hero-sm {
 	font-size: 1.9rem;
 }
+
+
+/*Font Weight*/
+.bold {
+    font-weight: $bold;
+}
+
+/*Extra*/
+.underline {
+	text-decoration: underline;
+}
+
+
 
 /***** NAVBAR *****/
 .navbar {
@@ -80,7 +107,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 header {
 	&.masthead {
 		background: url("../img/family-hero.png") no-repeat;
-    	background-size: 1054px;
+    	background-size: 1112px;
 		min-height: $hero-height;
 		padding-top: 0px;
     	padding-bottom: 0px;
@@ -133,6 +160,54 @@ header {
 	    		font-size: .9em;
     			margin: 0px;
 	    	}
+		}
+		.form-container {
+			background-color: $dark-blue;
+			text-align: center;
+			padding: 20px 26px;
+			h2 {
+				font-size: 1.8rem;
+			}
+			.form-control {
+				padding: .145rem .75rem;
+				border-radius: 0rem;
+				#state {
+					border-radius: .145px;
+				}
+			}
+			.form-check-label {
+				display: block;
+  				padding-left: 15px;
+  				text-indent: -15px;
+  				text-align: left;
+  				color: $ai-gold;
+			}
+			.form-check-input {
+  				width: 13px;
+  				height: 13px;
+  				padding: 0;
+  				margin:0;
+  				vertical-align: bottom;
+  				position: relative;
+  				top: -1px;
+  				overflow: hidden;
+			}
+			select {
+				margin-bottom: .8rem;
+			}
+			button {
+				background-color: $ai-gold;
+				border-color: $ai-gold;
+				padding: .3rem 2.5rem;
+				color: $dark-blue;
+				font-weight: $black;
+				margin-bottom: .8rem;
+				font-size: 1.8rem;
+				&:hover {
+					cursor: pointer;
+					background-color: $ai-gold-hover;
+				}
+			}
 		}
 	}
 }

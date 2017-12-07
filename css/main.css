@@ -19,7 +19,18 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
   color: #f2ae09;
   font-weight: bold; }
 
+/*Color*/
+.yellow {
+  color: #f2ae09; }
+
 /*Text Sizes*/
+.xs-text {
+  font-size: 54%;
+  font-weight: 400; }
+
+.sm-text {
+  font-size: 72%; }
+
 .small-lg-text {
   font-size: 1.5em;
   font-weight: 900;
@@ -40,6 +51,14 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 
 .hero-sm {
   font-size: 1.9rem; }
+
+/*Font Weight*/
+.bold {
+  font-weight: 700; }
+
+/*Extra*/
+.underline {
+  text-decoration: underline; }
 
 /***** NAVBAR *****/
 .navbar {
@@ -65,12 +84,12 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 /***** HERO SECTION *****/
 header.masthead {
   background: url("../img/family-hero.png") no-repeat;
-  background-size: 1054px;
-  min-height: 732px;
+  background-size: 1112px;
+  min-height: 772px;
   padding-top: 0px;
   padding-bottom: 0px; }
   header.masthead .container {
-    height: 732px; }
+    height: 772px; }
   header.masthead .row {
     height: 100%; }
   header.masthead .hero-text-block {
@@ -113,5 +132,44 @@ header.masthead {
     header.masthead .help-ticker p {
       font-size: .9em;
       margin: 0px; }
+  header.masthead .form-container {
+    background-color: #052a3d;
+    text-align: center;
+    padding: 20px 26px; }
+    header.masthead .form-container h2 {
+      font-size: 1.8rem; }
+    header.masthead .form-container .form-control {
+      padding: .145rem .75rem;
+      border-radius: 0rem; }
+      header.masthead .form-container .form-control #state {
+        border-radius: .145px; }
+    header.masthead .form-container .form-check-label {
+      display: block;
+      padding-left: 15px;
+      text-indent: -15px;
+      text-align: left;
+      color: #f2ae09; }
+    header.masthead .form-container .form-check-input {
+      width: 13px;
+      height: 13px;
+      padding: 0;
+      margin: 0;
+      vertical-align: bottom;
+      position: relative;
+      top: -1px;
+      overflow: hidden; }
+    header.masthead .form-container select {
+      margin-bottom: .8rem; }
+    header.masthead .form-container button {
+      background-color: #f2ae09;
+      border-color: #f2ae09;
+      padding: .3rem 2.5rem;
+      color: #052a3d;
+      font-weight: 900;
+      margin-bottom: .8rem;
+      font-size: 1.8rem; }
+      header.masthead .form-container button:hover {
+        cursor: pointer;
+        background-color: #ffcf5c; }
 
 /*# sourceMappingURL=main.css.map */
