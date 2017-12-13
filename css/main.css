@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 .hero-sm {
   font-size: 1.9rem; }
 
+.section-header {
+  font-size: 1.5rem; }
+
 /*Font Weight*/
 .bold {
   font-weight: 700; }
@@ -59,6 +62,12 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 /*Extra*/
 .underline {
   text-decoration: underline; }
+
+/***** MODULES *****/
+.award-container img {
+  width: 47%;
+  display: inline-block;
+  margin-bottom: 8px; }
 
 /***** NAVBAR *****/
 .navbar {
@@ -76,10 +85,6 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
       font-size: 1.2em;
       padding: 0px;
       margin: 0px; }
-  .navbar .award-container img {
-    width: 47%;
-    display: inline-block;
-    margin-bottom: 8px; }
 
 /***** HERO SECTIONS *****/
 header.masthead {
@@ -173,5 +178,39 @@ header.masthead {
         background-color: #ffcf5c; }
 
 /***** TESTIMONALS *****/
+.ai-testimonials {
+  padding: 1rem 0rem;
+  color: #052a3d; }
+  .ai-testimonials .section-header {
+    letter-spacing: .01rem;
+    font-weight: 900; }
+  .ai-testimonials .name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0rem; }
+  .ai-testimonials .address {
+    font-size: .95rem;
+    margin-bottom: .8rem; }
+  .ai-testimonials .body {
+    color: #0b0b0b; }
+
+/***** FOOTER *****/
+.ai-footer {
+  padding: 1.5rem 0rem; }
+  .ai-footer .body-text {
+    padding-top: 1rem;
+    font-size: 1.16rem; }
+  .ai-footer .top-row {
+    margin-bottom: 1.6rem; }
+  .ai-footer .award-container img {
+    width: 40%;
+    margin-right: 1rem; }
+  .ai-footer img {
+    width: 100%;
+    margin-bottom: .4rem; }
+  .ai-footer p {
+    margin-bottom: .04rem;
+    font-size: 1.2rem;
+    letter-spacing: -.2px; }
 
 /*# sourceMappingURL=main.css.map */

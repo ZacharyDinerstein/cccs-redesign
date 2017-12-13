@@ -59,7 +59,9 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 .hero-sm {
 	font-size: 1.9rem;
 }
-
+.section-header {
+	font-size: 1.5rem;
+}
 
 /*Font Weight*/
 .bold {
@@ -69,6 +71,17 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 /*Extra*/
 .underline {
 	text-decoration: underline;
+}
+
+
+
+/***** MODULES *****/
+.award-container {
+	img {
+		width: 47%;
+		display: inline-block;
+		margin-bottom: 8px;
+	}
 }
 
 
@@ -92,13 +105,6 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 			font-size: 1.2em;
 			padding: 0px;
 			margin: 0px; 
-		}
-	}
-	.award-container {
-		img {
-			width: 47%;
-			display: inline-block;
-			margin-bottom: 8px;
 		}
 	}
 }
@@ -215,6 +221,55 @@ header {
 
 
 /***** TESTIMONALS *****/
-.ai-testimonals {
-	
+.ai-testimonials {
+	padding: 1rem 0rem;
+	color: #052a3d;
+	.section-header {
+		letter-spacing: .01rem;
+    	font-weight: 900;
+	}
+	.name {
+    	font-size: 1.2rem;
+    	font-weight: 700;
+		margin-bottom: 0rem;
+	}
+	.address {
+		font-size: .95rem;
+		margin-bottom: .8rem;
+	}
+	.body {
+		color: $dark-black;
+	}
 }
+
+
+
+/***** FOOTER *****/
+.ai-footer {
+	padding: 1.5rem 0rem;
+	.body-text {
+		padding-top: 1rem;
+		font-size: 1.16rem;
+	}
+	.top-row {
+		margin-bottom: 1.6rem;
+	}
+	.award-container {
+		img {
+			width: 40%;
+    		margin-right: 1rem;
+		}
+	}
+	img {
+		width: 100%;
+		margin-bottom: .4rem;
+	}
+	p {
+		margin-bottom: .04rem;
+		font-size: 1.2rem;
+    	letter-spacing: -.2px;
+	}
+}
+
+
+
