@@ -15,13 +15,29 @@ $ai-gold-hover: #ffcf5c;
 $text-blue: #003868;
 $dark-black: #0b0b0b;
 
+
 /*TEXT SIZES*/
-$small-lg-text: 1.5em;
-$sm-text: 72%;
-$x-small-lg-text: 1.1em;
-$tiny-text: .8em;
-$help-lr-text: 1.3em;
-$help-md-text: 1.15em;
+/* Screen Sizes */
+$md-screen: 15px;
+$sm-screen: 14px;
+
+/* Full Screen Width Text Sizes */
+$full-width--xs: .9rem;
+$full-width--sm: 72%;
+$full-width--md: 1.18rem;
+$full-width--md-2: 1.5rem;
+$full-width--lg: 1.2rem;
+$full-width--lg-2: 1.7rem;
+
+
+/* Full Screen Width Text Sizes */
+$md-width--xs: .9rem;
+$md-width--sm: 72%;
+$md-width--md: 1rem;
+$md-width--md-2: 1.5rem;
+$md-width--lg: 1.2rem;
+$md-width--lg-2: 1.3rem;
+
 
 /*Font Weight*/
 $black: 900;

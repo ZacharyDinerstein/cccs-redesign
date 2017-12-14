@@ -2,6 +2,9 @@
 /*Ai Fonts*/
 /*Ai Colors*/
 /*TEXT SIZES*/
+/* Screen Sizes */
+/* Full Screen Width Text Sizes */
+/* Full Screen Width Text Sizes */
 /*Font Weight*/
 a:hover {
   text-decoration: none; }
@@ -14,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
   font-family: "Roboto", sans-serif; }
 
 .bold-yellow-text {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   letter-spacing: .9px;
   color: #f2ae09;
   font-weight: bold; }
@@ -32,16 +35,16 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
   font-size: 72%; }
 
 .small-lg-text {
-  font-size: 1.5em;
+  font-size: 1.7rem;
   font-weight: 900;
   letter-spacing: -1.3px; }
 
 .x-small-lg-text {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   font-weight: 900; }
 
 .tiny-ft {
-  font-size: 0.8em; }
+  font-size: 0.9rem; }
 
 .hero-lg {
   font-size: 4rem; }
@@ -85,11 +88,13 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
       color: #00afef; }
   .navbar .row {
     width: 100%; }
+  .navbar .navbar-brand img {
+    width: 100%; }
   .navbar .phone-container {
     text-align: center;
     margin-bottom: 8px; }
     .navbar .phone-container p, .navbar .phone-container a {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       padding: 0px;
       margin: 0px; }
 
@@ -110,6 +115,7 @@ header.masthead {
   header.masthead .row {
     height: 100%; }
   header.masthead .hero-text-block {
+    display: none;
     font-weight: 900;
     margin-bottom: 32px;
     color: #052a3d; }
@@ -135,19 +141,19 @@ header.masthead {
       padding: 8px;
       margin-bottom: 0px; }
     header.masthead .help-container .help-container-bottom {
-      font-size: 1.15em; }
+      font-size: 1.18rem; }
     header.masthead .help-container p {
       margin-left: 21px;
       margin-top: 16px;
       margin-bottom: 0px;
-      font-size: 1.3em;
+      font-size: 1.5rem;
       font-weight: 700; }
   header.masthead .help-ticker {
     background-color: #00afef;
     padding: 10px;
     color: #052a3d; }
     header.masthead .help-ticker p {
-      font-size: .9em;
+      font-size: .9rem;
       margin: 0px; }
   header.masthead .form-container {
     background-color: #052a3d;
@@ -224,5 +230,19 @@ header.masthead {
     margin-bottom: .04rem;
     font-size: 1.2rem;
     letter-spacing: -.2px; }
+
+@media (max-width: 1199px) {
+  body {
+    font-size: 15px; }
+
+  /*NAVBAR*/
+  .navbar .phone-container p, .navbar .phone-container a {
+    font-size: 1rem; }
+
+  .small-lg-text {
+    font-size: 1.3rem; } }
+@media (max-width: 992px) {
+  body {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */
