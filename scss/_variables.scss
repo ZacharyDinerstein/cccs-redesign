@@ -14,12 +14,13 @@ $ai-gold: #f2ae09;
 $ai-gold-hover: #ffcf5c;
 $text-blue: #003868;
 $dark-black: #0b0b0b;
+$ai-gray: #dedede;
 
 
 /*TEXT SIZES*/
 /* Screen Sizes */
+$lg-screen: 15px;
 $md-screen: 15px;
-$sm-screen: 14px;
 
 /* Full Screen Width Text Sizes */
 $full-width--xs: .9rem;
@@ -30,14 +31,22 @@ $full-width--lg: 1.2rem;
 $full-width--lg-2: 1.7rem;
 
 
-/* Full Screen Width Text Sizes */
+/* Large Screen Width Text Sizes */
+$lg-width--xs: .9rem;
+$lg-width--sm: 72%;
+$lg-width--md: 1rem;
+$lg-width--md-2: 1.5rem;
+$lg-width--lg: 1.2rem;
+$lg-width--lg-2: 1.3rem;
+
+
+/* Medium Screen Width Text Sizes */
 $md-width--xs: .9rem;
 $md-width--sm: 72%;
 $md-width--md: 1rem;
 $md-width--md-2: 1.5rem;
 $md-width--lg: 1.2rem;
-$md-width--lg-2: 1.3rem;
-
+$md-width--lg-2: 1rem;
 
 /*Font Weight*/
 $black: 900;
