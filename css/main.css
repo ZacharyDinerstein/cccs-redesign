@@ -63,6 +63,13 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 .underline {
   text-decoration: underline; }
 
+/*BTNS*/
+.btn-primary:not([disabled]):not(.disabled):active {
+  color: #052a3d;
+  background-color: #0062cc;
+  border-color: #005cbf;
+  box-shadow: none; }
+
 /***** MODULES *****/
 .award-container img {
   width: 47%;
@@ -93,6 +100,11 @@ header.masthead {
   min-height: 772px;
   padding-top: 0px;
   padding-bottom: 0px; }
+  header.masthead .overlay {
+    background: -webkit-linear-gradient(right, #919191, rgba(145, 145, 145, 0));
+    background: -o-linear-gradient(right, #919191, rgba(145, 145, 145, 0));
+    background: -moz-linear-gradient(right, #919191, rgba(145, 145, 145, 0));
+    background: linear-gradient(to left, #919191, rgba(145, 145, 145, 0)); }
   header.masthead .container {
     height: 772px; }
   header.masthead .row {

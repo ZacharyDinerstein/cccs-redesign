@@ -74,6 +74,15 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 }
 
 
+/*BTNS*/
+.btn-primary:not([disabled]):not(.disabled):active {
+	color: #052a3d;
+    background-color: #0062cc;
+    border-color: #005cbf;
+    box-shadow: none;
+}
+
+
 
 /***** MODULES *****/
 .award-container {
@@ -117,6 +126,12 @@ header {
 		min-height: $hero-height;
 		padding-top: 0px;
     	padding-bottom: 0px;
+    	.overlay {
+		    background: -webkit-linear-gradient(right, rgba(145, 145, 145, 1), rgba(145, 145, 145, 0));
+    		background: -o-linear-gradient(right, rgba(145, 145, 145, 1), rgba(145, 145, 145, 0));
+    		background: -moz-linear-gradient(right, rgba(145, 145, 145, 1), rgba(145, 145, 145, 0));
+    		background: linear-gradient(to left, rgba(145, 145, 145, 1), rgba(145, 145, 145, 0));
+    	}
 	    .container {
 	    	height: $hero-height;
 	    }
