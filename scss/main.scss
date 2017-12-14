@@ -135,6 +135,18 @@ header {
 		padding-top: 0px;
     	padding-bottom: 0px;
     	background-color: $ai-gray;
+    	transition: background-color 1s ease;
+    	&::before {
+			content: "";
+			background-color: $ai-white;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			transition: opacity 1s ease;
+    	}
     	.overlay {
 		    background: -webkit-linear-gradient(right, rgba(145, 145, 145, 1) 8%, rgba(145, 145, 145, 0) 80%);
     		background: -o-linear-gradient(right, rgba(145, 145, 145, 1) 8%, rgba(145, 145, 145, 0) 80%);
@@ -148,7 +160,6 @@ header {
 	    	height: 100%;
 	    }
 	    .hero-text-block {
-	    	display: none;
 	    	font-weight: 900;
 	    	margin-bottom: 32px;
 	    	color: $dark-blue;
@@ -296,6 +307,12 @@ header {
 	}
 }
 
+@media(max-width: 1684px) {
+	header.masthead::before {
+		opacity: 0.5;
+		transition: opacity 1s ease;
+	}
+}
 
 /* Large devices (desktops, less than 1200px)*/
 @media(max-width: 1199px) {
