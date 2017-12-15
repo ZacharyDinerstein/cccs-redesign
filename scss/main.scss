@@ -131,7 +131,6 @@ header {
 	&.masthead {
 		background: url("../img/family-hero.png") no-repeat;
     	background-size: 1112px;
-		min-height: $hero-height;
 		padding-top: 0px;
     	padding-bottom: 0px;
     	background-color: $ai-gray;
@@ -153,9 +152,6 @@ header {
     		background: -moz-linear-gradient(right, rgba(145, 145, 145, 1) 8%, rgba(145, 145, 145, 0) 80%);
     		background: linear-gradient(to left, rgba(145, 145, 145, 1) 8%, rgba(145, 145, 145, 0) 80%);
     	}
-	    .container {
-	    	height: $hero-height;
-	    }
 	    .row {
 	    	height: 100%;
 	    }
