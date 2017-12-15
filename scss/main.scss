@@ -7,7 +7,7 @@ a:hover {
 }
 
 /*FONTS */
-body {
+html {
 	font-size: 100%;
 }
 
@@ -312,7 +312,7 @@ header {
 
 /* Large devices (desktops, less than 1200px)*/
 @media(max-width: 1199px) {
-	body {
+	html {
 		font-size: $lg-screen;
 	}
 	/*NAVBAR*/
@@ -326,20 +326,64 @@ header {
 	.small-lg-text {
 		font-size: $lg-width--lg-2;
 	}
+		header {
+			&.masthead {
+			.hero-text-block {
+				.hero-lg {
+					font-size: 3.4rem;
+					margin-bottom: -18px;
+				}
+				.hero-md {
+					font-size: 2.2rem;
+					margin-bottom: -3px;
+				}
+				.hero-sm {
+					font-size: 1.8rem;
+					margin-bottom: -10px;
+				}
+			}
+			.form-container {
+				.form-check-label {
+					text-align: center;
+				}
+			}
+		}
+	}
 }
 
 /* Medium devices (tablets, less than 992px)*/
 @media(max-width: 991px) {
-	body {
+	html {
 		font-size: $md-screen;
 	}
 	.small-lg-text {
 		font-size: $md-width--lg-2;
 	}
+	header {
+		&.masthead {
+			.hero-text-block {
+				.hero-lg {
+					font-size: 3rem;
+					margin-bottom: -14px;
+				}
+				.hero-md {
+					font-size: 2.1rem;
+					margin-bottom: 1px;
+				}
+				.hero-sm {
+					font-size: 1.6rem;
+					margin-bottom: -7px;
+				}
+			}
+		}
+	}
 }
 
 /* Small devices (landscape phones, less than 768px)*/
 @media(max-width: 767px) {
+	html {
+		font-size: $sm-screen;
+	}
 	.navbar {
 		text-align: center;
 		.row {

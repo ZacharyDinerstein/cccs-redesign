@@ -11,7 +11,7 @@ a:hover {
   text-decoration: none; }
 
 /*FONTS */
-body {
+html {
   font-size: 100%; }
 
 h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
@@ -248,7 +248,7 @@ header.masthead {
     transition: opacity 1.3s ease; } }
 /* Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199px) {
-  body {
+  html {
     font-size: 15px; }
 
   /*NAVBAR*/
@@ -256,16 +256,41 @@ header.masthead {
     font-size: 1rem; }
 
   .small-lg-text {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  header.masthead .hero-text-block .hero-lg {
+    font-size: 3.4rem;
+    margin-bottom: -18px; }
+  header.masthead .hero-text-block .hero-md {
+    font-size: 2.2rem;
+    margin-bottom: -3px; }
+  header.masthead .hero-text-block .hero-sm {
+    font-size: 1.8rem;
+    margin-bottom: -10px; }
+  header.masthead .form-container .form-check-label {
+    text-align: center; } }
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991px) {
-  body {
-    font-size: 15px; }
+  html {
+    font-size: 14px; }
 
   .small-lg-text {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  header.masthead .hero-text-block .hero-lg {
+    font-size: 3rem;
+    margin-bottom: -14px; }
+  header.masthead .hero-text-block .hero-md {
+    font-size: 2.1rem;
+    margin-bottom: 1px; }
+  header.masthead .hero-text-block .hero-sm {
+    font-size: 1.6rem;
+    margin-bottom: -7px; } }
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767px) {
+  html {
+    font-size: 14px; }
+
   .navbar {
     text-align: center; }
     .navbar .row {
