@@ -184,6 +184,9 @@ header {
 	    	}
 	    	.help-container-bottom {
 	    		font-size: $full-width--md;
+	    		ul {
+	    			padding-bottom: 22px;
+	    		}
 	    	}
 	    	p {
 			    margin-left: 21px;
@@ -400,6 +403,10 @@ header {
 				font-weight: 900;
 				font-size: 1.6rem;
 				line-height: 25px;
+				padding-top: .8rem;
+			}
+			.help-container {
+				height: auto;
 			}
 		}
 	}
@@ -425,6 +432,12 @@ header {
 				padding: 12px 18px;
 				.yellow {
 					margin-bottom: 0px;
+				}
+			}
+			.container {
+				.hero-text-box-container {
+					padding-left: 0px;
+					padding-right: 0px;
 				}
 			}
 		}
