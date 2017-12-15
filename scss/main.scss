@@ -278,6 +278,11 @@ header {
 	.body {
 		color: $dark-black;
 	}
+	img {
+		width: 100%;
+		max-height: 124px;
+		max-width: 124px;
+	}
 }
 
 
@@ -381,6 +386,12 @@ header {
 					margin-bottom: -7px;
 				}
 			}
+		}
+	}
+	.testimonial-wrapper {
+		margin-bottom: 10px;
+		&.last {
+			margin-bottom: 0px;
 		}
 	}
 }
