@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 
 /***** MODULES *****/
 .award-container {
+	text-align: center;
 	img {
 		width: 47%;
 		display: inline-block;
@@ -370,7 +371,14 @@ header {
 	.small-lg-text {
 		font-size: $md-width--lg-2;
 	}
-	header {
+	.navbar {
+		.row {
+			&.align-items-end {
+				width: auto;
+			}
+		}
+	}
+	header { 
 		&.masthead {
 			.hero-text-block {
 				.hero-lg {
@@ -393,6 +401,14 @@ header {
 		&.last {
 			margin-bottom: 0px;
 		}
+	}
+	.ai-footer {
+		.award-container {
+			img {
+				width: 38%;
+				margin-right: .8rem;
+			}
+		}	
 	}
 }
 
@@ -427,6 +443,14 @@ header {
 			width: auto;
 		}
 	}
+	.ai-footer {
+		.award-container {
+			img {
+				width: 75%;
+				margin-right: 0px;
+			}
+		}	
+	}
 }
 
 @media(max-width: 575px) {
@@ -435,6 +459,14 @@ header {
 	}
 	.award-container {
 		display: none;
+	}
+	.ai-footer {
+		.body-text {
+			text-align: center;
+		}	
+		p {
+			font-size: 1.1rem;
+		}
 	}
 	header {
 		&.masthead {
@@ -451,6 +483,13 @@ header {
 					padding-right: 0px;
 				}
 			}
+		}
+	}
+	.ai-footer {
+		padding: 0px;
+		.body-text {
+			font-size: .9rem;
+			line-height: 15px;
 		}
 	}
 }

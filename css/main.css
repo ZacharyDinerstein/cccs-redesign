@@ -75,10 +75,12 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
   box-shadow: none; }
 
 /***** MODULES *****/
-.award-container img {
-  width: 47%;
-  display: inline-block;
-  margin-bottom: 8px; }
+.award-container {
+  text-align: center; }
+  .award-container img {
+    width: 47%;
+    display: inline-block;
+    margin-bottom: 8px; }
 
 /***** NAVBAR *****/
 .navbar {
@@ -261,10 +263,10 @@ header.masthead {
 
   /*NAVBAR*/
   .navbar .phone-container p, .navbar .phone-container a {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
 
   .small-lg-text {
-    font-size: 1.3rem; }
+    font-size: 1.4rem; }
 
   header.masthead .hero-text-block .hero-lg {
     font-size: 3.4rem;
@@ -283,7 +285,10 @@ header.masthead {
     font-size: 14px; }
 
   .small-lg-text {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
+
+  .navbar .row.align-items-end {
+    width: auto; }
 
   header.masthead .hero-text-block .hero-lg {
     font-size: 3rem;
@@ -298,7 +303,11 @@ header.masthead {
   .testimonial-wrapper {
     margin-bottom: 10px; }
     .testimonial-wrapper.last {
-      margin-bottom: 0px; } }
+      margin-bottom: 0px; }
+
+  .ai-footer .award-container img {
+    width: 38%;
+    margin-right: .8rem; } }
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767px) {
   html {
@@ -322,13 +331,22 @@ header.masthead {
   .navbar {
     text-align: center; }
     .navbar .row {
-      width: auto; } }
+      width: auto; }
+
+  .ai-footer .award-container img {
+    width: 75%;
+    margin-right: 0px; } }
 @media (max-width: 575px) {
   html {
     font-size: 13px; }
 
   .award-container {
     display: none; }
+
+  .ai-footer .body-text {
+    text-align: center; }
+  .ai-footer p {
+    font-size: 1.1rem; }
 
   header.masthead {
     background-size: 0px; }
@@ -338,6 +356,12 @@ header.masthead {
         margin-bottom: 0px; }
     header.masthead .container .hero-text-box-container {
       padding-left: 0px;
-      padding-right: 0px; } }
+      padding-right: 0px; }
+
+  .ai-footer {
+    padding: 0px; }
+    .ai-footer .body-text {
+      font-size: .9rem;
+      line-height: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
