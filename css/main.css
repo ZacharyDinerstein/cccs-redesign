@@ -2,19 +2,23 @@
 /*Ai Fonts*/
 /*Ai Colors*/
 /*TEXT SIZES*/
+/* Screen Sizes */
+/* Full Screen Width Text Sizes */
+/* Large Screen Width Text Sizes */
+/* Medium Screen Width Text Sizes */
 /*Font Weight*/
 a:hover {
   text-decoration: none; }
 
 /*FONTS */
-body {
+html {
   font-size: 100%; }
 
 h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
   font-family: "Roboto", sans-serif; }
 
 .bold-yellow-text {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   letter-spacing: .9px;
   color: #f2ae09;
   font-weight: bold; }
@@ -32,16 +36,16 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
   font-size: 72%; }
 
 .small-lg-text {
-  font-size: 1.5em;
+  font-size: 1.7rem;
   font-weight: 900;
   letter-spacing: -1.3px; }
 
 .x-small-lg-text {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   font-weight: 900; }
 
 .tiny-ft {
-  font-size: 0.8em; }
+  font-size: 0.9rem; }
 
 .hero-lg {
   font-size: 4rem; }
@@ -79,17 +83,21 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 /***** NAVBAR *****/
 .navbar {
   color: #052a3d; }
+  .navbar .navbar-brand {
+    margin-right: 0rem; }
   .navbar a {
     color: #052a3d; }
     .navbar a:hover {
       color: #00afef; }
   .navbar .row {
     width: 100%; }
+  .navbar .navbar-brand img {
+    width: 100%; }
   .navbar .phone-container {
     text-align: center;
     margin-bottom: 8px; }
     .navbar .phone-container p, .navbar .phone-container a {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       padding: 0px;
       margin: 0px; }
 
@@ -97,16 +105,25 @@ h1, h2, h3, h4, h5, h6, p, .navbar, header.masthead {
 header.masthead {
   background: url("../img/family-hero.png") no-repeat;
   background-size: 1112px;
-  min-height: 772px;
   padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  background-color: #dedede;
+  transition: background-color 1s ease; }
+  header.masthead::before {
+    content: "";
+    background-color: #fff;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transition: opacity 1s ease; }
   header.masthead .overlay {
     background: -webkit-linear-gradient(right, #919191 8%, rgba(145, 145, 145, 0) 80%);
     background: -o-linear-gradient(right, #919191 8%, rgba(145, 145, 145, 0) 80%);
     background: -moz-linear-gradient(right, #919191 8%, rgba(145, 145, 145, 0) 80%);
     background: linear-gradient(to left, #919191 8%, rgba(145, 145, 145, 0) 80%); }
-  header.masthead .container {
-    height: 772px; }
   header.masthead .row {
     height: 100%; }
   header.masthead .hero-text-block {
@@ -121,6 +138,8 @@ header.masthead {
       font-size: 29px; }
     header.masthead .hero-text-block p {
       margin-bottom: -12px; }
+  header.masthead .hero-text-block-sm-screen {
+    display: none; }
   header.masthead .help-container {
     background: -webkit-linear-gradient(top, #0b557a, rgba(11, 85, 122, 0.4));
     /* For Safari 5.1 to 6.0 */
@@ -135,19 +154,21 @@ header.masthead {
       padding: 8px;
       margin-bottom: 0px; }
     header.masthead .help-container .help-container-bottom {
-      font-size: 1.15em; }
+      font-size: 1.18rem; }
+      header.masthead .help-container .help-container-bottom ul {
+        padding-bottom: 22px; }
     header.masthead .help-container p {
       margin-left: 21px;
       margin-top: 16px;
       margin-bottom: 0px;
-      font-size: 1.3em;
+      font-size: 1.5rem;
       font-weight: 700; }
   header.masthead .help-ticker {
     background-color: #00afef;
     padding: 10px;
     color: #052a3d; }
     header.masthead .help-ticker p {
-      font-size: .9em;
+      font-size: .9rem;
       margin: 0px; }
   header.masthead .form-container {
     background-color: #052a3d;
@@ -205,6 +226,10 @@ header.masthead {
     margin-bottom: .8rem; }
   .ai-testimonials .body {
     color: #0b0b0b; }
+  .ai-testimonials img {
+    width: 100%;
+    max-height: 124px;
+    max-width: 124px; }
 
 /***** FOOTER *****/
 .ai-footer {
@@ -224,5 +249,95 @@ header.masthead {
     margin-bottom: .04rem;
     font-size: 1.2rem;
     letter-spacing: -.2px; }
+
+@media (max-width: 1684px) {
+  header.masthead::before {
+    opacity: 0.7;
+    transition: opacity 1.3s ease; } }
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+  html {
+    font-size: 15px; }
+
+  /*NAVBAR*/
+  .navbar .phone-container p, .navbar .phone-container a {
+    font-size: 1rem; }
+
+  .small-lg-text {
+    font-size: 1.3rem; }
+
+  header.masthead .hero-text-block .hero-lg {
+    font-size: 3.4rem;
+    margin-bottom: -18px; }
+  header.masthead .hero-text-block .hero-md {
+    font-size: 2.2rem;
+    margin-bottom: -3px; }
+  header.masthead .hero-text-block .hero-sm {
+    font-size: 1.8rem;
+    margin-bottom: -10px; }
+  header.masthead .form-container .form-check-label {
+    text-align: center; } }
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+  html {
+    font-size: 14px; }
+
+  .small-lg-text {
+    font-size: 1rem; }
+
+  header.masthead .hero-text-block .hero-lg {
+    font-size: 3rem;
+    margin-bottom: -14px; }
+  header.masthead .hero-text-block .hero-md {
+    font-size: 2.1rem;
+    margin-bottom: 1px; }
+  header.masthead .hero-text-block .hero-sm {
+    font-size: 1.6rem;
+    margin-bottom: -7px; }
+
+  .testimonial-wrapper {
+    margin-bottom: 10px; }
+    .testimonial-wrapper.last {
+      margin-bottom: 0px; } }
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+  html {
+    font-size: 14px; }
+
+  header.masthead {
+    background-size: 929px; }
+    header.masthead .hero-text-block {
+      display: none; }
+    header.masthead .hero-text-block-sm-screen {
+      display: block;
+      color: #052a3d;
+      text-align: center;
+      font-weight: 900;
+      font-size: 1.6rem;
+      line-height: 25px;
+      padding-top: .8rem; }
+    header.masthead .help-container {
+      height: auto; }
+
+  .navbar {
+    text-align: center; }
+    .navbar .row {
+      width: auto; } }
+@media (max-width: 575px) {
+  html {
+    font-size: 13px; }
+
+  .award-container {
+    display: none; }
+
+  header.masthead {
+    background-size: 0px; }
+    header.masthead .form-container {
+      padding: 12px 18px; }
+      header.masthead .form-container .yellow {
+        margin-bottom: 0px; }
+    header.masthead .container .hero-text-box-container {
+      padding-left: 0px;
+      padding-right: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
