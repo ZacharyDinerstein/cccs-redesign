@@ -138,6 +138,8 @@ header.masthead {
       font-size: 29px; }
     header.masthead .hero-text-block p {
       margin-bottom: -12px; }
+  header.masthead .hero-text-block-sm-screen {
+    display: none; }
   header.masthead .help-container {
     background: -webkit-linear-gradient(top, #0b557a, rgba(11, 85, 122, 0.4));
     /* For Safari 5.1 to 6.0 */
@@ -291,12 +293,34 @@ header.masthead {
   html {
     font-size: 14px; }
 
+  header.masthead {
+    background-size: 929px; }
+    header.masthead .hero-text-block {
+      display: none; }
+    header.masthead .hero-text-block-sm-screen {
+      display: block;
+      color: #052a3d;
+      text-align: center;
+      font-weight: 900;
+      font-size: 1.6rem;
+      line-height: 25px; }
+
   .navbar {
     text-align: center; }
     .navbar .row {
       width: auto; } }
 @media (max-width: 575px) {
+  html {
+    font-size: 13px; }
+
   .award-container {
-    display: none; } }
+    display: none; }
+
+  header.masthead {
+    background-size: 0px; }
+    header.masthead .form-container {
+      padding: 12px 18px; }
+      header.masthead .form-container .yellow {
+        margin-bottom: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

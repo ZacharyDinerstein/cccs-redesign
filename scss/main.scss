@@ -172,6 +172,9 @@ header {
 	    		margin-bottom: -12px;
 	    	}
 	    }
+	    .hero-text-block-sm-screen {
+	    	display: none;
+	    }
 	    .help-container {
 	    	@include help-container-gradient;
 	    	height: 354px;
@@ -384,6 +387,22 @@ header {
 	html {
 		font-size: $sm-screen;
 	}
+	header {
+		&.masthead {
+			background-size: 929px;
+			.hero-text-block {
+				display: none;
+			}
+			.hero-text-block-sm-screen {
+				display: block;
+				color: $dark-blue;
+				text-align: center;
+				font-weight: 900;
+				font-size: 1.6rem;
+				line-height: 25px;
+			}
+		}
+	}
 	.navbar {
 		text-align: center;
 		.row {
@@ -393,7 +412,21 @@ header {
 }
 
 @media(max-width: 575px) {
+	html {
+		font-size: $xs-screen;
+	}
 	.award-container {
 		display: none;
+	}
+	header {
+		&.masthead {
+			background-size: 0px;
+			.form-container {
+				padding: 12px 18px;
+				.yellow {
+					margin-bottom: 0px;
+				}
+			}
+		}
 	}
 }
